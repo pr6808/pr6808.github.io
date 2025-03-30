@@ -1,4 +1,4 @@
-© 2024 Golden ICT Solutions. All rights reserved.
+© 2025 Golden ICT Solutions. All rights reserved.
 
 All content, including text, images, and designs, are the property of Golden ICT Solutions and may not be reproduced, distributed, or used without explicit permission. Unauthorized use of this material may result in legal action. Golden ICT Solutions is a registered trademark of Golden ICT Solutions in Zambia.
 
