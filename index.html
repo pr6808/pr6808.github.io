@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Inter&family=Nunito&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,806 +26,131 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <img src="assets/img/GoldenICTLogo-removebg-preview.png" alt="">
-        <h1 class="sitename">GOLDEN ICT SOLUTIONS</h6>
+        <h1 class="sitename">GOLDEN ICT SOLUTIONS</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="#hero" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <div class="hero-bg">
-        <img src="assets/img/hero-bg-light.webp" alt="">
+    <section id="hero" class="hero section d-flex align-items-center" style="background: url('assets/img/hero-bg-light.webp') center center / cover no-repeat;">
+      <div class="container text-center position-relative" data-aos="fade-in">
+        <h1 class="display-4 fw-bold text-uppercase text-white mb-3">Empowering Zambian Businesses</h1>
+        <p class="lead text-light mb-4">Through Innovative ICT Solutions</p>
+        <a href="#services" class="btn btn-primary btn-lg rounded-pill px-4 me-2">Get Started</a>
+        <a href="#about" class="btn btn-outline-light btn-lg rounded-pill px-4">Learn More</a>
       </div>
-      <div class="container text-center">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <h1 data-aos="fade-up">Welcome to <span>GOLDEN ICT SOLUTIONS</span></h1>
-          <p data-aos="fade-up" data-aos-delay="100">Empowering Businesses with Innovative IT Solutions<br></p>
-          <img src="assets/img/hero-services-img.webp" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
+    </section>
 
     <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section light-background">
-
+    <section id="featured-services" class="featured-services section bg-light py-5">
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">IT Hardware & Software Solutions</a></h4>
-                <p class="description">Equip your business with reliable, high-quality technology. We offer a range of laptops, desktops, and software solutions that fit your unique needs. From sourcing and supplying the latest hardware to providing software installation and maintenance, Golden ICT Solutions ensures that you have the tools to perform at your best.</p>
-              </div>
+        <div class="row text-center g-4">
+          <div class="col-lg-4">
+            <div class="p-4 bg-white shadow-sm rounded" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon mb-3 text-primary fs-1"><i class="bi bi-cpu-fill"></i></div>
+              <h4 class="fw-bold">IT Hardware & Software</h4>
+              <p>We supply and maintain laptops, desktops, and software—ensuring high performance for your business.</p>
             </div>
           </div>
-          <!-- End Service Item -->
-
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Custom Web Design & Development</a></h4>
-                <p class="description">Create a powerful online presence with our custom web design and development services. From stunning, responsive designs to robust, user-friendly interfaces, we build websites that captivate audiences and drive results. Our team focuses on delivering high-performance websites tailored to meet your business goals and provide an exceptional user experience across all devices.</p>
-              </div>
+          <div class="col-lg-4">
+            <div class="p-4 bg-white shadow-sm rounded" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon mb-3 text-success fs-1"><i class="bi bi-code-slash"></i></div>
+              <h4 class="fw-bold">Web Design & Development</h4>
+              <p>Custom websites that blend aesthetics and performance for an unforgettable user experience.</p>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Digital Marketing & Brand Strategy</a></h4>
-                <p class="description">Elevate your brand with our digital marketing and brand strategy services. We help businesses establish a strong online presence through SEO, social media management, content creation, and targeted advertising campaigns. Our strategies are designed to increase visibility, engage audiences, and drive sustainable growth for your business.
-
-                  These feature services emphasize Golden ICT Solutions' comprehensive approach, from technical infrastructure to building a digital brand.</p>
-              </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="p-4 bg-white shadow-sm rounded" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon mb-3 text-danger fs-1"><i class="bi bi-megaphone-fill"></i></div>
+              <h4 class="fw-bold">Digital Marketing</h4>
+              <p>Reach more customers with powerful SEO, social media campaigns, and content marketing.</p>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Featured Services Section -->
+    </section>
 
     <!-- About Section -->
-    <section id="about" class="about section">
-
+    <section id="about" class="about section bg-white py-5">
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p class="who-we-are">About Golden ICT Solutions</p>
-            <h2>Welcome to Golden ICT Solutions, where innovation meets excellence in technology.</h2>
-            <p class="fst-italic">
-              At Golden ICT Solutions, we believe in transforming challenges into opportunities. Our team of skilled professionals combines deep technical expertise with a passion for service, focusing on delivering results that align with each client’s unique goals. We take pride in our ability to stay ahead of industry trends and continuously enhance our offerings to meet the evolving needs of our clients.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Web Design & Development: Building visually appealing, functional websites that reflect your brand.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Social Media Marketing: Increasing your online presence with strategic social media engagement.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Graphic Design: Creating visuals that resonate with your audience and enhance brand identity.</span></li>
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="assets/img/about-company-1.jpg" class="img-fluid rounded" alt="">
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h2 class="fw-bold">About Golden ICT Solutions</h2>
+            <p class="text-muted">Where innovation meets excellence in technology. We transform challenges into solutions through passion, skill, and integrity.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle text-success me-2"></i>Responsive Web Design & Development</li>
+              <li><i class="bi bi-check-circle text-success me-2"></i>Social Media & Digital Branding</li>
+              <li><i class="bi bi-check-circle text-success me-2"></i>Hardware Support & Sales</li>
             </ul>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="about.html" class="btn btn-outline-primary mt-3">Read More</a>
           </div>
-
-          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
-            <div class="row gy-4">
-              <div class="col-lg-6">
-                <img src="assets/img/about-company-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="row gy-4">
-                  <div class="col-lg-12">
-                    <img src="assets/img/about-company-2.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-lg-12">
-                    <img src="assets/img/about-company-3.jpg" class="img-fluid" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
         </div>
-
       </div>
-    </section><!-- /About Section -->
-
-    <!-- Clients Section -->
-    
-
-    </section><!-- /Clients Section -->
-
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Features</h2>
-        <p>At Golden ICT Solutions, we offer a full spectrum of IT services designed to meet the diverse needs of businesses in Zambia. Our solutions range from cutting-edge software development to reliable hardware support, making us a one-stop shop for all your technology requirements.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-        <div class="row justify-content-between">
-
-          <div class="col-lg-5 d-flex align-items-center">
-
-            <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-                  <i class="bi bi-binoculars"></i>
-                  <div>
-                    <h4 class="d-none d-lg-block">IT Hardware Servicest</h4>
-                    <p>
-                      We provide a variety of hardware solutions to ensure that your business runs smoothly and efficiently. Our hardware services include:
-                      <h5>PC and Laptop Repairs</h5>
-                      <span>Quick, reliable repair services for desktops, laptops, and other computer hardware, ensuring minimal downtime for your operations.</span>
-
-                      <h5>Hardware Upgrades</h5>
-                      <span>Upgrade your existing equipment to improve performance, extend hardware life, and optimize your workflow.</span>
-                      
-                      <h5>IT Equipment Sales</h5>
-                      <span>Get quality IT hardware, including laptops, desktops, printers, and other peripherals, from trusted brands at competitive prices.</span>
-
-                      <h5>Hardware Support and Maintenance</h5>
-                      <span>Comprehensive support to keep your hardware running smoothly, with regular maintenance and troubleshooting to avoid unexpected issues.</span>
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-                  <i class="bi bi-box-seam"></i>
-                  <div>
-                    <h4 class="d-none d-lg-block">Software Development & IT Solutions</h4>
-                    <p>
-                      Our team specializes in custom software solutions to empower businesses and streamline processes. These services include:
-                      <h5>Web Design & Development</h5>
-                      <span>Stand out online with responsive, user-friendly websites tailored to your brand. Our designs focus on aesthetics and functionality to create an engaging experience for your audience.</span>
-                      <h5>Web Application Development</h5>
-                      <span>Enhance productivity and improve customer engagement with customized web applications, developed to meet specific business needs.</span>
-        
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-                  <i class="bi bi-brightness-high"></i>
-                  <div>
-                    <h4 class="d-none d-lg-block">Digital Marketing Services</h4>
-                    <p>
-                      Our digital marketing team leverages the latest strategies to enhance your online presence and engage your audience effectively:
-                      <h5>Social Media Marketing</h5>
-                      <span>Boost brand awareness and engagement through tailored social media campaigns that resonate with your audience and build lasting relationships.</span>
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul><!-- End Tab Nav -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="tab-pane fade active show" id="features-tab-1">
-                <img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
-              </div><!-- End Tab Content Item -->
-
-              <div class="tab-pane fade" id="features-tab-2">
-                <img src="assets/img/tabs-2.jpg" alt="" class="img-fluid">
-              </div><!-- End Tab Content Item -->
-
-              <div class="tab-pane fade" id="features-tab-3">
-                <img src="assets/img/tabs-3.jpg" alt="" class="img-fluid">
-              </div><!-- End Tab Content Item -->
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Features Section -->
-
-    <!-- Features Details Section -->
-    <section id="features-details" class="features-details section">
-
-      <div class="container">
-
-        <div class="row gy-4 justify-content-between features-item">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/features-1.jpg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h3> SEO & Content Marketing</h3>
-              <p>
-                Improve your website’s visibility on search engines with our SEO services, while engaging content drives traffic and keeps your audience informed.
-              </p>
-              <a href="#" class="btn more-btn">Learn More</a>
-            </div>
-          </div>
-
-        </div><!-- Features Item -->
-
-        <div class="row gy-4 justify-content-between features-item">
-
-          <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="content">
-              <h3> Software Development & IT Solutions</h3>
-              <p>
-                Our team specializes in custom software solutions to empower businesses and streamline processes. These services include:
-              </p>
-              <ul>
-                <li><i class="bi bi-easel flex-shrink-0"></i> Web Application Development:
-                  Enhance productivity and improve customer engagement with customized web applications, developed to meet specific business needs.</li>
-                <li><i class="bi bi-patch-check flex-shrink-0"></i> Product Management:
-                  From concept to market, our team manages your digital product lifecycle, ensuring it aligns with your business goals and reaches your target audience effectively.</li>
-                <li><i class="bi bi-brightness-high flex-shrink-0"></i>Cybersecurity Solutions:
-                  Protect your business from online threats with our comprehensive cybersecurity services, including data protection, vulnerability assessments, and secure network setups.</li>
-              </ul>
-              <p></p>
-              <a href="#" class="btn more-btn">Learn More</a>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/features-2.jpg" class="img-fluid" alt="">
-          </div>
-
-        </div><!-- Features Item -->
-
-      </div>
-
-    </section><!-- /Features Details Section -->
+    </section>
 
     <!-- Services Section -->
-    <section id="services" class="services section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Golden ICT Solutions is committed to providing a full range of IT services that empower businesses to reach new heights. Whether you need innovative software solutions, reliable hardware support, or dynamic digital marketing, our team is here to make technology work for you.</p>
-      </div><!-- End Section Title -->
-
+    <section id="services" class="services section light-background py-5">
+      <div class="container section-title text-center mb-5" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>Golden ICT Solutions offers holistic ICT services tailored to your business needs.</p>
+      </div>
       <div class="container">
-
-        <div class="row g-5">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <i class="bi bi-activity icon"></i>
-              <div>
-                <h3>IT Hardware Solutions</h3>
-                <p>Our hardware services are designed to keep your business operating smoothly, with fast and efficient support to meet all your hardware needs.</p>
-                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="p-4 bg-white shadow rounded text-center h-100">
+              <div class="icon mb-3 text-info fs-1"><i class="bi bi-tools"></i></div>
+              <h4>Hardware Repairs</h4>
+              <p>Fast and efficient laptop & desktop repairs for your business continuity.</p>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <i class="bi bi-broadcast icon"></i>
-              <div>
-                <h3>Software Development & IT Solutions</h3>
-                <p>Our custom software solutions help streamline operations, enhance user experiences, and drive growth. We’re here to turn your tech vision into reality.</p>
-                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <i class="bi bi-easel icon"></i>
-              <div>
-                <h3>Digital Marketing & Social Media Services</h3>
-                <p>Our digital marketing strategies are designed to boost your brand’s online presence, attract the right audience, and foster long-term client relationships.</p>
-                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <i class="bi bi-bounding-box-circles icon"></i>
-              <div>
-                <h3>Graphic Design & Branding</h3>
-                <p>Our creative design team brings your brand vision to life, crafting visuals that resonate with your audience and set you apart.</p>
-                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <i class="bi bi-calendar4-week icon"></i>
-              <div>
-                <h3>Hardware Maintenance.</h3>
-                <p>Our team offers regular maintenance to ensure that your hardware remains in peak condition, reducing risks and extending the life of your equipment.</p>
-                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <i class="bi bi-chat-square-text icon"></i>
-              <div>
-                <h3>Web Design & Development</h3>
-                <p>Create a strong online presence with visually appealing, responsive, and functional websites that make a lasting impression on your audience.</p>
-                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- More Features Section -->
-    <section id="more-features" class="more-features section">
-
-      <div class="container">
-
-        <div class="row justify-content-around gy-4">
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-            <h3>Digital Marketing & Social Media Services</h3>
-            <p>Our digital marketing strategies are designed to boost your brand’s online presence, attract the right audience, and foster long-term client relationships</p>
-
-            <div class="row">
-
-              <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-easel flex-shrink-0"></i>
-                <div>
-                  <h4>Social Media Marketing</h4>
-                  <p>Increase brand visibility and customer engagement through tailored social media campaigns on popular platforms.</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-patch-check flex-shrink-0"></i>
-                <div>
-                  <h4>Search Engine Optimization (SEO)</h4>
-                  <p>Drive more traffic to your website with SEO services that improve your search engine rankings and bring in quality leads.</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-brightness-high flex-shrink-0"></i>
-                <div>
-                  <h4>Content & Email Marketing</h4>
-                  <p>Deliver valuable, targeted content to engage your audience and build strong client relationships through effective email marketing campaigns.</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-brightness-high flex-shrink-0"></i>
-                <div>
-                  <h4>IT Consultation Services</h4>
-                  <p>Our consultation services are designed to help businesses understand and optimize their IT environments effectively and affordably </p>
-                </div>
-              </div><!-- End Icon Box -->
-
-            </div>
-
           </div>
-
-          <div class="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/features-3.jpg" alt="">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="p-4 bg-white shadow rounded text-center h-100">
+              <div class="icon mb-3 text-warning fs-1"><i class="bi bi-browser-chrome"></i></div>
+              <h4>Web Development</h4>
+              <p>Custom web apps that deliver functionality and drive performance.</p>
+            </div>
           </div>
-
-        </div>
-
-      </div>
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>What services does Golden ICT Solutions provide?</h3>
-                <div class="faq-content">
-                  <p>Golden ICT Solutions offers a wide range of IT services, including hardware repair and maintenance, web design and development, custom software solutions, digital marketing, and graphic design. We focus on both hardware and software solutions to meet all your business needs.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>How can I get a quote for your services?</h3>
-                <div class="faq-content">
-                  <p>You can request a quote by contacting us through our website, emailing us at mwewap68@gmail.com , or calling us at +260 978088437. Provide a brief description of your requirements, and our team will get back to you promptly with a customized quote.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>What kind of businesses do you work with?</h3>
-                <div class="faq-content">
-                  <p>Golden ICT Solutions works with businesses of all sizes, from startups to established companies, across various industries. Whether you’re a small business looking to enhance your online presence or a larger enterprise in need of complex IT solutions, we’re here to help.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Do you provide on-site hardware repair and maintenance?</h3>
-                <div class="faq-content">
-                  <p>Yes, we offer on-site hardware repair and maintenance services for clients within our service area. If you’re outside this area, please contact us, and we’ll work with you to find the best solution.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Do you offer ongoing support and maintenance?</h3>
-                <div class="faq-content">
-                  <p>Yes, we provide ongoing support and maintenance services for websites, applications, and hardware. We’re committed to ensuring that your IT systems continue to operate smoothly long after the project is completed.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3> Can you help us with IT consultation?</h3>
-                <div class="faq-content">
-                  <p>Absolutely! Our IT consultation services include strategy planning, process optimization, and technology recommendations, all tailored to your business’s specific needs and goals.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="p-4 bg-white shadow rounded text-center h-100">
+              <div class="icon mb-3 text-success fs-1"><i class="bi bi-share"></i></div>
+              <h4>Marketing Solutions</h4>
+              <p>Social media, SEO, and brand strategy to grow your online presence.</p>
             </div>
-
-          </div><!-- End Faq Column-->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>See what our clients are saying about Golden ICT Solutions and our commitment to excellent service.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-
       </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>We’re here to help you with all your IT needs. Whether you have a question, need support, or want a custom quote, our team at Golden ICT Solutions is ready to assist.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Address</h3>
-              <p>Ndatabable street Meanwood ibex hill,Lusaka,Zambia</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone"></i>
-              <h3>Call Us</h3>
-              <p>+260 978088437</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope"></i>
-              <h3>Email Us</h3>
-              <p>goldenictsolutionsltd@yahoo.com</p>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
-
-        <div class="row gy-4 mt-1">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div><!-- End Google Maps -->
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">GOLDEN ICT SOLUTIONS</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>Ndatabale street Plot: 1789</p>
-            <p>Lusaka,Zambia 10101</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+260 978088437</span></p>
-            <p><strong>Email:</strong> <span>goldenictsolutionsltd@yahoo.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=" https://web.facebook.com/GoldenICTsolution/?_rdc=1&_rdr#"><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/golden-ict-solutions/about/?viewAsMember=true"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>©2025<span>Copyright</span> <strong class="px-1 sitename">GOLDEN ICT SOLUTIONS</strong><span>All Rights Reserved</span></p>
-      <div class="credits">
-        Designed by GOLDEN ICT SOLUTIONS
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
