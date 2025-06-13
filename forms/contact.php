@@ -1,16 +1,15 @@
 <?php
 /**
  * PHP Email Form handler
- * Template from: https://bootstrapmade.com/php-email-form/
  */
 
-$receiving_email_address = 'goldenictsolutionsltd@yahoo.com';
+$receiving_email_address = 'petermwewa@goldenictsolutions.com';
 
-// Load the PHP Email Form library
-if (file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php')) {
+// Load PHP Email Form class
+if (file_exists($php_email_form = 'assets/vendor/php-email-form/php-email-form.php')) {
   include($php_email_form);
 } else {
-  die('Unable to load the "PHP Email Form" Library!');
+  die('Unable to load PHP Email Form library!');
 }
 
 $contact = new PHP_Email_Form;
@@ -25,14 +24,16 @@ $contact->add_message($_POST['name'], 'Name');
 $contact->add_message($_POST['email'], 'Email');
 $contact->add_message($_POST['message'], 'Message', 10);
 
-// Uncomment this section to use SMTP (optional):
-
+// Enable SMTP with Zoho SSL
 $contact->smtp = array(
-  'host' => 'smtp.mail.yahoo.com',
-  'username' => 'goldenictsolutionsltd@yahoo.com',
-  'password' => 'YOUR_APP_PASSWORD',
-  'port' => '587',
-  'encryption' => 'tls'
+  'host' => 'smtp.zoho.com',
+  'username' => 'petermwewa@goldenictsolutions.com',
+  'password' => 'YOUR_ZOHO_APP_PASSWORD', // Replace this with your actual Zoho App Password
+  'port' => '465',
+  'encryption' => 'ssl'
 );
+
+// Optional: enable debug for testing
+// $contact->debug = true;
 
 echo $contact->send();
