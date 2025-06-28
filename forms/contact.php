@@ -3,7 +3,7 @@
  * PHP Email Form handler
  */
 
-$receiving_email_address = 'petermwewa@goldenictsolutions.com';
+$receiving_email_address = 'info@goldenictsolutions.com';
 
 // Load PHP Email Form class
 if (file_exists($php_email_form = 'assets/vendor/php-email-form/php-email-form.php')) {
@@ -27,7 +27,7 @@ $contact->add_message($_POST['message'], 'Message', 10);
 // Enable SMTP with Zoho SSL
 $contact->smtp = array(
   'host' => 'smtp.zoho.com',
-  'username' => 'petermwewa@goldenictsolutions.com',
+  'username' => 'info@goldenictsolutions.com',
   'password' => 'YOUR_ZOHO_APP_PASSWORD', // Replace this with your actual Zoho App Password
   'port' => '465',
   'encryption' => 'ssl'
