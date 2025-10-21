@@ -1,39 +1,22 @@
 <?php
 /**
- * PHP Email Form handler
+ * Contact Form Handler - Refactored and Secure
  */
 
-$receiving_email_address = 'info@goldenictsolutions.com';
+header('X-Content-Type-Options: nosniff');
+header('X-Frame-Options: DENY');
+header('X-XSS-Protection: 1; mode=block');
 
-// Load PHP Email Form class
-if (file_exists($php_email_form = 'assets/vendor/php-email-form/php-email-form.php')) {
-  include($php_email_form);
-} else {
-  die('Unable to load PHP Email Form library!');
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
+    echo 'Method not allowed';
+    exit;
 }
 
-$contact = new PHP_Email_Form;
-$contact->ajax = true;
+require_once __DIR__ . '/EmailHandler.php';
+$config = require __DIR__ . '/config.php';
 
-$contact->to = $receiving_email_address;
-$contact->from_name = $_POST['name'] ?? '';
-$contact->from_email = $_POST['email'] ?? '';
-$contact->subject = $_POST['subject'] ?? 'New Message from Website';
+$handler = new EmailHandler($config);
+$result = $handler->sendEmail('contact', $_POST);
 
-$contact->add_message($_POST['name'], 'Name');
-$contact->add_message($_POST['email'], 'Email');
-$contact->add_message($_POST['message'], 'Message', 10);
-
-// Enable SMTP with Zoho SSL
-$contact->smtp = array(
-  'host' => 'smtp.zoho.com',
-  'username' => 'info@goldenictsolutions.com',
-  'password' => 'YOUR_ZOHO_APP_PASSWORD', // Replace this with your actual Zoho App Password
-  'port' => '465',
-  'encryption' => 'ssl'
-);
-
-// Optional: enable debug for testing
-// $contact->debug = true;
-
-echo $contact->send();
+echo $result;

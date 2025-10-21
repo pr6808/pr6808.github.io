@@ -1,37 +1,22 @@
 <?php
-  /**
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+/**
+ * Newsletter Subscription Handler - Refactored and Secure
+ */
 
-  $receiving_email_address = 'Mwewap68@outlook.com';
+header('X-Content-Type-Options: nosniff');
+header('X-Frame-Options: DENY');
+header('X-XSS-Protection: 1; mode=block');
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
+    echo 'Method not allowed';
+    exit;
+}
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['email'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject ="New Subscription: " . $_POST['email'];
+require_once __DIR__ . '/EmailHandler.php';
+$config = require __DIR__ . '/config.php';
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'smtp.gmail.com',
-    'username' => 'mwewap68@gmail.com',
-    'password' => 'pass',
-    'port' => '587'
-    'encryption' => 'tls' // Encryption method
-  );
-  */
+$handler = new EmailHandler($config);
+$result = $handler->sendEmail('newsletter', $_POST);
 
-  $contact->add_message( $_POST['email'], 'Email');
-
-  echo $contact->send();
-?>
+echo $result;

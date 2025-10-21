@@ -3,22 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Golden ICT Solutions</title>
+  
+  <!-- SEO Meta Tags -->
+  <title>Golden ICT Solutions | IT Consulting, Networking & Cybersecurity in Zambia</title>
+  <meta name="description" content="Golden ICT Solutions provides expert IT consulting, network solutions, cybersecurity, cloud services, and custom software development in Lusaka, Zambia. Empowering businesses through technology."/>
+  <meta name="keywords" content="IT consulting Zambia, cybersecurity Lusaka, network solutions, cloud services, web development Zambia, Golden ICT Solutions"/>
+  <meta name="author" content="Golden ICT Solutions"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.goldenictsolutions.com/"/>
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Golden ICT Solutions | IT Consulting in Zambia"/>
+  <meta property="og:description" content="Expert IT solutions for businesses in Zambia. From consulting to cybersecurity, we deliver reliable, scalable, and affordable technology services."/>
+  <meta property="og:image" content="https://www.goldenictsolutions.com/assets/img/GoldenICTLogo.png"/>
+  <meta property="og:url" content="https://www.goldenictsolutions.com/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Golden ICT Solutions"/>
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Golden ICT Solutions | IT Consulting in Zambia"/>
+  <meta name="twitter:description" content="Expert IT solutions for businesses in Zambia. Reliable, scalable, and affordable."/>
+  <meta name="twitter:image" content="https://www.goldenictsolutions.com/assets/img/GoldenICTLogo.png"/>
+  
+  <!-- Favicons -->
   <link rel="icon" href="assets/img/favicon.png"/>
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"/>
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#2c5f7f"/>
+  
+  <!-- Preconnect to External Resources -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Nunito:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
   <link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+  
+  <!-- Main CSS Files -->
   <link href="assets/css/main.css" rel="stylesheet"/>
+  <link href="assets/css/enhanced.css" rel="stylesheet"/>
+  
+  <!-- Structured Data (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Golden ICT Solutions",
+    "description": "IT Consulting, Networking, and Cybersecurity Services in Zambia",
+    "url": "https://www.goldenictsolutions.com",
+    "logo": "https://www.goldenictsolutions.com/assets/img/GoldenICTLogo.png",
+    "telephone": "+260761224337",
+    "email": "info@goldenictsolutions.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ndatabale Street, Plot 1789",
+      "addressLocality": "Lusaka",
+      "addressRegion": "Lusaka Province",
+      "postalCode": "10101",
+      "addressCountry": "ZM"
+    },
+    "sameAs": [
+      "https://web.facebook.com/GoldenICTsolution",
+      "https://www.linkedin.com/company/golden-ict-solutions"
+    ]
+  }
+  </script>
 </head>
 
 <body class="index-page">
-  <!-- HEADER (unchanged as requested) -->
+  <!-- HEADER -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
@@ -26,17 +87,11 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#hero" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
-          <li class="dropdown"><a href="#"><span>Features</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#features">Core Features</a></li>
-              <li><a href="#features-details">Solutions</a></li>
-              <li><a href="#faq">FAQs</a></li>
-              <li><a href="#contact">Contact Info</a></li>
-            </ul>
-          </li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -47,11 +102,43 @@
 
   <main class="main">
     <!-- Hero Section -->
-    <section class="hero d-flex align-items-center justify-content-center">
+    <section id="hero" class="hero d-flex align-items-center justify-content-center">
       <div class="container text-center position-relative" data-aos="fade-up">
-        <h1>Empowering Your Business Through Tech</h1>
+        <h1>Empowering Your Business Through Technology</h1>
         <p class="mt-3">Golden ICT Solutions — Reliable. Scalable. Affordable.</p>
         <a href="#features" class="btn-get-started">Explore Our Services</a>
+      </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="stats-counter">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="stats-item">
+              <span class="number stats-number" data-target="50" data-suffix="+">0+</span>
+              <span class="label">Happy Clients</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="stats-item">
+              <span class="number stats-number" data-target="150" data-suffix="+">0+</span>
+              <span class="label">Projects Completed</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="stats-item">
+              <span class="number stats-number" data-target="5" data-suffix="+">0+</span>
+              <span class="label">Years Experience</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="stats-item">
+              <span class="number stats-number" data-target="15" data-suffix="+">0+</span>
+              <span class="label">Expert Team Members</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -108,24 +195,146 @@
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
             <div class="tab-content">
               <div class="tab-pane active show" id="tab-1">
-                <img src="assets/img/features-1.jpg" class="img-fluid mb-3" alt="">
+                <img src="assets/img/features-1.jpg" class="img-fluid mb-3" alt="IT Consulting">
                 <h3>Customized IT Consulting</h3>
                 <p>We align technology with your goals through personalized strategies and scalable roadmaps.</p>
               </div>
               <div class="tab-pane" id="tab-2">
-                <img src="assets/img/features-2.jpg" class="img-fluid mb-3" alt="">
+                <img src="assets/img/features-2.jpg" class="img-fluid mb-3" alt="Networking">
                 <h3>Advanced Networking</h3>
                 <p>From LANs to secure wireless deployments, we ensure stable and secure communication lines.</p>
               </div>
               <div class="tab-pane" id="tab-3">
-                <img src="assets/img/features-3.jpg" class="img-fluid mb-3" alt="">
+                <img src="assets/img/features-3.jpg" class="img-fluid mb-3" alt="Cybersecurity">
                 <h3>Cybersecurity Solutions</h3>
                 <p>Proactive threat detection and system hardening to safeguard your digital assets.</p>
               </div>
               <div class="tab-pane" id="tab-4">
-                <img src="assets/img/features-4.jpg" class="img-fluid mb-3" alt="">
+                <img src="assets/img/features-4.jpg" class="img-fluid mb-3" alt="Cloud Services">
                 <h3>Cloud Services</h3>
                 <p>We offer cloud migration, storage, SaaS, and more for agile operations and reduced costs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Portfolio</h2>
+        <p>Showcasing our recent projects and successful implementations</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-item" data-category="web">
+              <img src="assets/img/services.jpg" alt="E-commerce Platform">
+              <div class="portfolio-overlay">
+                <h3>E-commerce Platform</h3>
+                <p>Full-stack web development for retail client</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-item" data-category="network">
+              <img src="assets/img/tabs-1.jpg" alt="Network Infrastructure">
+              <div class="portfolio-overlay">
+                <h3>Network Infrastructure</h3>
+                <p>Enterprise network design and implementation</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="portfolio-item" data-category="security">
+              <img src="assets/img/tabs-2.jpg" alt="Security Audit">
+              <div class="portfolio-overlay">
+                <h3>Security Audit & Compliance</h3>
+                <p>Comprehensive cybersecurity assessment</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="portfolio-item" data-category="cloud">
+              <img src="assets/img/tabs-3.jpg" alt="Cloud Migration">
+              <div class="portfolio-overlay">
+                <h3>Cloud Migration Project</h3>
+                <p>Seamless migration to cloud infrastructure</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="portfolio-item" data-category="web">
+              <img src="assets/img/hero-services-img.webp" alt="Custom CRM">
+              <div class="portfolio-overlay">
+                <h3>Custom CRM System</h3>
+                <p>Tailored customer relationship management solution</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="portfolio-item" data-category="consulting">
+              <img src="assets/img/about-company-1.jpg" alt="IT Consulting">
+              <div class="portfolio-overlay">
+                <h3>IT Strategy Consulting</h3>
+                <p>Digital transformation roadmap development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Client Testimonials</h2>
+        <p>What our clients say about working with us</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                Golden ICT Solutions transformed our IT infrastructure. Their expertise and professionalism are unmatched in Zambia.
+              </div>
+              <div class="testimonial-author">
+                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Client 1" class="author-img">
+                <div class="author-info">
+                  <h4>John Mwansa</h4>
+                  <p>CEO, TechCorp Zambia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                Their cybersecurity solutions gave us peace of mind. Highly recommend their services to any business.
+              </div>
+              <div class="testimonial-author">
+                <img src="assets/img/testimonials/testimonials-2.jpg" alt="Client 2" class="author-img">
+                <div class="author-info">
+                  <h4>Sarah Banda</h4>
+                  <p>Director, Financial Services Ltd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                Exceptional web development and ongoing support. They truly understand our business needs.
+              </div>
+              <div class="testimonial-author">
+                <img src="assets/img/testimonials/testimonials-3.jpg" alt="Client 3" class="author-img">
+                <div class="author-info">
+                  <h4>David Phiri</h4>
+                  <p>Owner, Retail Solutions</p>
+                </div>
               </div>
             </div>
           </div>
@@ -189,6 +398,12 @@
             <p class="mt-3"><strong>Phone:</strong> <span>+260 761224337</span></p>
             <p><strong>Email:</strong> <span>info@goldenictsolutions.com</span></p>
           </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://web.facebook.com/GoldenICTsolution" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/golden-ict-solutions" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
         </div>
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Quick Links</h4>
@@ -196,15 +411,16 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Solutions</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Custom Apps</a></li>
-            <li><a href="#">Networking</a></li>
-            <li><a href="#">Consulting</a></li>
+            <li><a href="services.html">Web Design</a></li>
+            <li><a href="services.html">Custom Apps</a></li>
+            <li><a href="services.html">Networking</a></li>
+            <li><a href="services.html">Consulting</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-12 footer-newsletter">
@@ -225,15 +441,18 @@
     </div>
   </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
-  <!-- JS Files -->
+  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+  <!-- Main JS Files -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/enhanced.js"></script>
 </body>
 </html>
